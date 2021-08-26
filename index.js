@@ -13,8 +13,8 @@ app.get("/", function (req, res) {
 	client.messages
 		.create({
 			body: "Hello Wynisco!",
-			from: "MG6cfc9ac2e4fbbac6b37cb3a234d3208f",
-			to: "+14569875732",
+			from: "+19437462874", //change this to a valid twilio number
+			to: "+17324758731" //change this to a valid phone number
 		})
 		.then((message) => res.send(`The message to : ${message.to} was sent!`))
 		.done();
